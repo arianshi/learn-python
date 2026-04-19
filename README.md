@@ -57,16 +57,16 @@ written correctly.
 ## Table of Contents
 
 1. **Getting Started**
-    - [What is Python](src/getting_started/what_is_python.md)
-    - [Python Syntax](src/getting_started/python_syntax.md)
-    - [Variables](src/getting_started/test_variables.py)
+    - [Checked][What is Python](src/getting_started/what_is_python.md)
+    - [Checked][Python Syntax](src/getting_started/python_syntax.md)
+    - [Checked][Variables](src/getting_started/test_variables.py)
 2. **Operators**
-    - [Arithmetic Operators](src/operators/test_arithmetic.py) (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
-    - [Bitwise Operators](src/operators/test_bitwise.py) (`&`, `|`, `^`, `>>`, `<<`, `~`)
-    - [Assignment Operators](src/operators/test_assigment.py) (`=`, `+=`, `-=`, `/=`, `//=` etc.)
-    - [Comparison Operator](src/operators/test_comparison.py) (`==`, `!=`, `>`, `<`, `>=`, `<=`)
-    - [Logical Operators](src/operators/test_logical.py) (`and`, `or`, `not`)
-    - [Identity Operators](src/operators/test_identity.py) (`is`, `is not`)
+    - [Checked][Arithmetic Operators](src/operators/test_arithmetic.py) (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
+    - [Checked][Bitwise Operators](src/operators/test_bitwise.py) (`&`, `|`, `^`, `>>`, `<<`, `~`)
+    - [Checked][Assignment Operators](src/operators/test_assigment.py) (`=`, `+=`, `-=`, `/=`, `//=` etc.)
+    - [Checked][Comparison Operator](src/operators/test_comparison.py) (`==`, `!=`, `>`, `<`, `>=`, `<=`)
+    - [Checked][Logical Operators](src/operators/test_logical.py) (`and`, `or`, `not`)
+    - [Identity Operators](src/operators/test_identity.py) (`is`, `is= not`)
     - [Membership Operators](src/operators/test_membership.py) (`in`, `not in`)
 3. **Data Types**
     - [Numbers](src/data_types/test_numbers.py) (including booleans)
@@ -160,6 +160,7 @@ Tests are made using [pytest](https://docs.pytest.org/en/latest/) framework.
 You may add new tests for yourself by adding files and functions with `test_` prefix
 (i.e. `test_topic.py` with `def test_sub_topic()` function inside).
 
+
 To run all the tests please execute the following command from the project root folder:
 
 ```bash
@@ -171,6 +172,7 @@ To run specific tests please execute:
 ```bash
 pytest ./path/to/the/test_file.py
 ```
+
 
 ## Linting the Code
 
@@ -192,4 +194,35 @@ specific error by running:
 
 ```bash
 pylint --help-msg=missing-docstring
+```
+
+
+# Virtual Environment
+
+👉 A virtual environment (venv) gives each project its own isolated Python + dependencies
+
+What happens if you DON’T use venv
+
+All projects share the same global environment.
+
+Example:
+
+pip install pytest==6
+
+Later another project needs:
+
+pip install pytest==8
+
+👉 Result:
+
+One version overwrites the other
+Or things break unexpectedly
+Or you get weird errors (like the one you just hit)
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -U pip
+python -m pip install pytest
+python -m pytest
 ```

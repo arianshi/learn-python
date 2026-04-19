@@ -36,7 +36,7 @@ def test_arithmetic_operators():
     assert 2 ** 5 == 32
     assert isinstance(5 ** 3, int)
 
-    # Floor division.
+    # NOTE Floor division.
     assert 5 // 3 == 1
     assert 6 // 3 == 2
     assert 7 // 3 == 2

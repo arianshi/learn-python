@@ -84,7 +84,7 @@ def test_string_type():
         not_existing_character = word[42]
         assert not not_existing_character
 
-    # However, out of range slice indexes are handled gracefully when used
+    # NOTE: However, out of range slice indexes are handled gracefully when used
     # for slicing:
     assert word[4:42] == 'on'
     assert word[42:] == ''
@@ -308,3 +308,16 @@ def test_string_formatting():
     formatted_string = 'Jack: {Jack:d}; Sjoerd: {Sjoerd:d}; Dcab: {Dcab:d}'.format(**table)
 
     assert formatted_string == 'Jack: 4098; Sjoerd: 4127; Dcab: 8637678'
+
+# Usage	Meaning
+# a ** b	exponent (power) 2 ** 3 = 8
+# **dict	unpack a dictionary into keyword arguments
+
+table = {"name": "Arian", "age": 30}
+
+# name="Arian", age=30
+def greet(name, age):
+    print(name, age) # Arian 30
+
+greet(**table)
+#greet(name="Arian", age=30)
