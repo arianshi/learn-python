@@ -20,7 +20,10 @@ def test_identity_operators():
 
     # Example:
     # first_fruits_list and third_fruits_list are the same objects.
+    print(first_fruits_list is third_fruits_list)       # True
     assert first_fruits_list is third_fruits_list
+
+    print(first_fruits_list is second_fruits_list)      # False
 
     # is not
     # Returns true if both variables are not the same object.
@@ -28,8 +31,12 @@ def test_identity_operators():
     # Example:
     # first_fruits_list and second_fruits_list are not the same objects, even if they have
     # the same content
+    print(first_fruits_list is not second_fruits_list)  # True
     assert first_fruits_list is not second_fruits_list
 
-    # To demonstrate the difference between "is" and "==": this comparison returns True because
-    # first_fruits_list is equal to second_fruits_list.
+    # "is" checks same memory location (identity); "==" checks same value (equality).
+    # second_fruits_list has the same content but is a different object in memory.
+    print(first_fruits_list is second_fruits_list)      # False  (different objects)
+    print(first_fruits_list == second_fruits_list)      # True   (same content)
+    assert first_fruits_list is not second_fruits_list
     assert first_fruits_list == second_fruits_list

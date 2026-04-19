@@ -56,35 +56,35 @@ written correctly.
 
 ## Table of Contents
 
-1. **Getting Started**
+1. [Checked]**Getting Started**
     - [Checked][What is Python](src/getting_started/what_is_python.md)
     - [Checked][Python Syntax](src/getting_started/python_syntax.md)
     - [Checked][Variables](src/getting_started/test_variables.py)
-2. **Operators**
+2. [Checked]**Operators**
     - [Checked][Arithmetic Operators](src/operators/test_arithmetic.py) (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
     - [Checked][Bitwise Operators](src/operators/test_bitwise.py) (`&`, `|`, `^`, `>>`, `<<`, `~`)
     - [Checked][Assignment Operators](src/operators/test_assigment.py) (`=`, `+=`, `-=`, `/=`, `//=` etc.)
     - [Checked][Comparison Operator](src/operators/test_comparison.py) (`==`, `!=`, `>`, `<`, `>=`, `<=`)
     - [Checked][Logical Operators](src/operators/test_logical.py) (`and`, `or`, `not`)
-    - [Identity Operators](src/operators/test_identity.py) (`is`, `is= not`)
-    - [Membership Operators](src/operators/test_membership.py) (`in`, `not in`)
-3. **Data Types**
-    - [Numbers](src/data_types/test_numbers.py) (including booleans)
-    - [Strings](src/data_types/test_strings.py) and their methods
-    - [Lists](src/data_types/test_lists.py) and their methods (including list comprehensions)
-    - [Tuples](src/data_types/test_tuples.py)
-    - [Sets](src/data_types/test_sets.py) and their methods
-    - [Dictionaries](src/data_types/test_dictionaries.py)
-    - [Type Casting](src/data_types/test_type_casting.py)
+    - [Checked][Identity Operators](src/operators/test_identity.py) (`is`, `is= not`)
+    - [Checked][Membership Operators](src/operators/test_membership.py) (`in`, `not in`)
+3. [Checked]**Data Types**
+    - [Checked][Numbers](src/data_types/test_numbers.py) (including booleans)
+    - [Checked][Strings](src/data_types/test_strings.py) and their methods
+    - [Checked][Lists](src/data_types/test_lists.py) and their methods (including list comprehensions)
+    - [Checked][Tuples](src/data_types/test_tuples.py)
+    - [Checked][Sets](src/data_types/test_sets.py) and their methods
+    - [Checked][Dictionaries](src/data_types/test_dictionaries.py)
+    - [Checked][Type Casting](src/data_types/test_type_casting.py)
 4. **Control Flow**
-    - [The `if` statement](src/control_flow/test_if.py)
-    - [The `for` statement](src/control_flow/test_for.py) (and `range()` function)
-    - [The `while` statement](src/control_flow/test_while.py)
-    - [The `try` statements](src/control_flow/test_try.py)
-    - [The `break` statement](src/control_flow/test_break.py)
-    - [The `continue` statement](src/control_flow/test_continue.py)
+    - [Checked][The `if` statement](src/control_flow/test_if.py)
+    - [Checked][The `for` statement](src/control_flow/test_for.py) (and `range()` function)
+    - [Checked][The `while` statement](src/control_flow/test_while.py)
+    - [Checked][The `try` statements](src/control_flow/test_try.py)
+    - [Checked][The `break` statement](src/control_flow/test_break.py)
+    - [Checked][The `continue` statement](src/control_flow/test_continue.py)
 5. **Functions**
-    - [Function Definition](src/functions/test_function_definition.py) (`def` and `return` statements)
+    - [[Checked]Function Definition](src/functions/test_function_definition.py) (`def` and `return` statements)
     - [Scopes of Variables Inside Functions](src/functions/test_function_scopes.py) (`global` and `nonlocal` statements)
     - [Default Argument Values](src/functions/test_function_default_arguments.py)
     - [Keyword Arguments](src/functions/test_function_keyword_arguments.py)

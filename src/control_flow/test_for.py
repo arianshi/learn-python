@@ -45,6 +45,7 @@ def test_for_statement():
 
     for number in range(5):
         iterated_numbers.append(number)
+        print(number)  # 0, 1, 2, 3, 4
 
     assert iterated_numbers == [0, 1, 2, 3, 4]
 
@@ -122,13 +123,18 @@ def test_range_function():
     creates lists from iterables:
     """
 
+    # range(stop) — starts at 0, stops before stop
+    print(list(range(5)))             # [0, 1, 2, 3, 4]
     assert list(range(5)) == [0, 1, 2, 3, 4]
 
-    # The given end point is never part of the generated sequence; range(10) generates 10 values,
-    # the legal indices for items of a sequence of length 10. It is possible to let the range start
-    # at another number, or to specify a different increment (even negative; sometimes this is
-    # called the ‘step’):
-
+    # range(start, stop) — starts at start, stops before stop
+    print(list(range(5, 10)))         # [5, 6, 7, 8, 9]
     assert list(range(5, 10)) == [5, 6, 7, 8, 9]
+
+    # range(start, stop, step) — increments by step each time
+    print(list(range(0, 10, 3)))      # [0, 3, 6, 9]
     assert list(range(0, 10, 3)) == [0, 3, 6, 9]
+
+    # negative step — counts down
+    print(list(range(-10, -100, -30)))  # [-10, -40, -70]
     assert list(range(-10, -100, -30)) == [-10, -40, -70]

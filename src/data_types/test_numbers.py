@@ -5,7 +5,7 @@
 
 There are three numeric types in Python:
 - int (e.g. 2, 4, 20)
-    - bool (e.g. False and True, acting like 0 and 1)
+  - bool (e.g. False and True, acting like 0 and 1)
 - float (e.g. 5.0, 1.6)
 - complex (e.g. 5+6j, 4-3j)
 """
@@ -47,6 +47,7 @@ def test_booleans():
     assert isinstance(false_boolean, bool)
 
     # Let's try to cast boolean to string.
+    # 尝试将布尔值转换为字符串。
     assert str(true_boolean) == "True"
     assert str(false_boolean) == "False"
 
@@ -60,6 +61,7 @@ def test_float_numbers():
 
     float_number = 7.0
     # Another way of declaring float is using float() function.
+    # 另一种声明浮点数的方式是使用 float() 函数。
     float_number_via_function = float(7)
     float_negative = -35.59
 
@@ -70,6 +72,7 @@ def test_float_numbers():
 
     # Float can also be scientific numbers with an "e" to indicate
     # the power of 10.
+    # 浮点数也可以用科学计数法表示，用"e"表示 10 的幂次。
     float_with_small_e = 35e3
     float_with_big_e = 12E4
 
@@ -94,27 +97,34 @@ def test_number_operators():
     """Basic operations"""
 
     # Addition.
+    # 加法。
     assert 2 + 4 == 6
 
     # Multiplication.
+    # 乘法。
     assert 2 * 4 == 8
 
     # Division always returns a floating point number.
+    # 除法始终返回浮点数。
     assert 12 / 3 == 4.0
     assert 12 / 5 == 2.4
     assert 17 / 3 == 5.666666666666667
 
     # Modulo operator returns the remainder of the division.
+    # 取模运算符返回除法的余数。
     assert 12 % 3 == 0
     assert 13 % 3 == 1
 
-    # Floor division discards the fractional part.
+    # NEW: Floor division discards the fractional part. 17 // 3 = 5 (remainder 2)
+    # 整除：丢弃小数部分。17 // 3 = 5（余 2）。
     assert 17 // 3 == 5
 
     # Raising the number to specific power.
+    # 对数字进行幂运算。
     assert 5 ** 2 == 25  # 5 squared
     assert 2 ** 7 == 128  # 2 to the power of 7
 
     # There is full support for floating point; operators with
     # mixed type operands convert the integer operand to floating point.
+    # 完全支持浮点运算；当操作数类型混合时，整数操作数会被转换为浮点数。
     assert 4 * 3.75 - 1 == 14.0
