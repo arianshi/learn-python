@@ -1,5 +1,7 @@
 """Lists.
 
+列表 (Lists)
+
 # @see: https://www.learnpython.org/en/Lists
 # @see: https://docs.python.org/3/tutorial/introduction.html
 # @ee: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
@@ -9,6 +11,10 @@ other values. The most versatile is the list, which can be written as a
 list of comma-separated values (items) between square brackets. Lists
 might contain items of different types, but usually the items all have
 the same type.
+
+Python 提供了若干种复合数据类型，用于将其他值组合在一起。最通用的是列表，
+它可以写成在方括号之间用逗号分隔的一系列值（元素）。列表中可以包含不同类型的元素，
+但通常所有元素的类型相同。
 """
 
 import pytest
@@ -16,6 +22,7 @@ import pytest
 
 def test_list_type():
     """List type."""
+    # 列表类型
 
     # Lists are very similar to arrays. They can contain any type of variable, and they can contain
     # as many variables as you wish. Lists can also be iterated over in a very simple manner.

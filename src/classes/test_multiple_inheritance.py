@@ -1,11 +1,14 @@
 """Multiple Inheritance
 
+多重继承 (Multiple Inheritance)
+
 @see: https://docs.python.org/3/tutorial/classes.html#multiple-inheritance
 """
 
 
 def test_multiple_inheritance():
     """Multiple Inheritance"""
+    # 多重继承
 
     # pylint: disable=too-few-public-methods
     class Clock:
@@ -18,6 +21,8 @@ def test_multiple_inheritance():
 
             Method is hardcoded just for multiple inheritance illustration.
             """
+            # 获取当前时间
+            # 此方法为了说明多重继承而硬编码。
             return self.time
 
     # pylint: disable=too-few-public-methods
@@ -31,10 +36,13 @@ def test_multiple_inheritance():
 
             Method is hardcoded just for multiple inheritance illustration.
             """
+            # 获取当前日期
+            # 此方法为了说明多重继承而硬编码。
             return self.date
 
     # Python supports a form of multiple inheritance as well. A class definition with multiple
     # base classes looks like this.
+    # Python 也支持某种形式的多重继承。带有多个基类的类定义如下所示。
     class CalendarClock(Clock, Calendar):
         """Class that uses multiple inheritance.
 

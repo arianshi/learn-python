@@ -1,5 +1,7 @@
 """Math.
 
+数学 (Math)
+
 @see: https://docs.python.org/3/tutorial/stdlib.html#mathematics
 """
 
@@ -13,6 +15,8 @@ def test_math():
 
     The math module gives access to the underlying C library functions for floating point math.
     """
+    # 数学
+    # math 模块提供了对底层 C 库浮点数运算函数的访问。
     assert math.cos(math.pi / 4) == 0.70710678118654757
     assert math.log(1024, 2) == 10.0
 
@@ -22,22 +26,28 @@ def test_random():
 
     The random module provides tools for making random selections.
     """
+    # 随机
+    # random 模块提供了进行随机选择的工具。
 
     # Choose from the list randomly.
+    # 从列表中随机选择。
     random_options = ['apple', 'pear', 'banana']
     random_choice = random.choice(random_options)  # i.e. 'apple'
     assert random_choice in random_options
 
     # Sampling without replacement.
+    # 无放回抽样。
     random_sample = random.sample(range(100), 10)  # i.e. [30, 83, 16, 4, 8, 81, 41, 50, 18, 33]
     for sample in random_sample:
         assert 0 <= sample <= 100
 
     # Choose random number.
+    # 选择一个随机数。
     random_float = random.random()  # i.e. 0.17970987693706186
     assert 0 <= random_float <= 1
 
     # Random integer chosen from range(6)
+    # 从 range(6) 中随机选择一个整数。
     random_integer = random.randrange(6)  # i.e. 4
     assert 0 <= random_integer <= 6
 
@@ -48,6 +58,8 @@ def test_statistics():
     The statistics module calculates basic statistical properties (the mean, median,
     variance, etc.) of numeric data.
     """
+    # 统计
+    # statistics 模块用于计算数值数据的基本统计属性（均值、中位数、方差等）。
 
     data = [2.75, 1.75, 1.25, 0.25, 0.5, 1.25, 3.5]
 

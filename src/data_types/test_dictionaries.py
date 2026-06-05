@@ -1,10 +1,14 @@
 """Dictionaries.
 
+字典 (Dictionaries)
+
 @see: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 @see: https://www.w3schools.com/python/python_dictionaries.asp
 
 A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are
 written with curly brackets, and they have keys and values.
+
+字典是一种无序、可变且带索引的集合。在 Python 中，字典使用花括号书写，包含键和值。
 
 Dictionaries are sometimes found in other languages as “associative memories” or “associative
 arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by
@@ -14,15 +18,25 @@ either directly or indirectly, it cannot be used as a key. You can’t use lists
 lists can be modified in place using index assignments, slice assignments, or methods like append()
 and extend().
 
+字典在其他语言中有时被称为「关联内存」或「关联数组」。与通过数字范围索引的序列不同，
+字典通过键来索引，键可以是任何不可变类型；字符串和数字总是可以作为键。
+如果元组只包含字符串、数字或元组，也可以用作键；如果元组直接或间接包含任何可变对象，
+则不能用作键。列表不能用作键，因为列表可以通过索引赋值、切片赋值，或像 append() 和 extend()
+之类的方法被原地修改。
+
 It is best to think of a dictionary as a set of key: value pairs, with the requirement that the
 keys are unique (within one dictionary). A pair of braces creates an empty dictionary: {}.
 Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs
 to the dictionary; this is also the way dictionaries are written on output.
+
+最好将字典视为一组 键: 值 对的集合，要求键在同一个字典中是唯一的。一对花括号创建一个空字典：{}。
+在花括号内放入用逗号分隔的键:值对列表，可以为字典添加初始的键值对；这也是字典输出时的书写形式。
 """
 
 
 def test_dictionary():
     """Dictionary"""
+    # 字典
 
     fruits_dictionary = {
         'cherry': 'red',
